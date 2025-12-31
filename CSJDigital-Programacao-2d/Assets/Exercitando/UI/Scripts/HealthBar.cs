@@ -1,0 +1,20 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class HealthBar : MonoBehaviour
+{
+    [SerializeField] private int health;
+    [SerializeField] private Image barraVida;
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        barraVida.fillAmount = (float) health / 100;
+    }
+}
